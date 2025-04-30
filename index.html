@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Interactive Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Welcome!</h1>
+  <button onclick="sayHello()">Click Me!</button>
+
+  <p id="hoverText">Hover over this text</p>
+
+  <input type="text" id="typeHere" placeholder="Type something">
+
+  <p ondblclick="secretAction()">Double-click me!</p>
+
+  <div>
+
+  <button onclick="changeText()">Change My Text</button>
+  <p id="textToChange">I will change!</p>
+
+  <button onclick="showTab(1)">Tab 1</button>
+  <button onclick="showTab(2)">Tab 2</button>
+  <div id="tab1" class="tab-content">Welcome to Tab 1</div>
+  <div id="tab2" class="tab-content hidden">This is Tab 2</div>
+
+  </div>
+
+  
+  <form onsubmit="validateForm(event)">
+    <p><input type="text" id="name" placeholder="Name"></p>
+    <p><input type="email" id="email" placeholder="Email"></p>
+    <p><input type="password" id="password" placeholder="Password (min 8 chars)"></p>
+    <p><button type="submit">Submit</button></p>
+    <p id="formMsg"></p>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
